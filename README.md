@@ -11,6 +11,7 @@ This package can be used in Laravel 5.8 or higher.
 
 ``` bash
 composer require leapfinder/laravel-questionnaire
+php artisan vendor:publish --provider='LeapFinder\Questionnaire\QuestionnaireServiceProvider'
 ```
 
 ## Usage
