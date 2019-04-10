@@ -1,5 +1,7 @@
 <?php
 
+namespace LeapFinder\Questionnaire;
+
 /**
  * @param string $guard
  *
