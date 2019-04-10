@@ -1,0 +1,60 @@
+{
+    "name": "leapfinder/laravel-questionnaire",
+    "description": "A very simple questionnaire for a laravel 5.8+ website or application",
+    "homepage": "https://github.com/leapfinder/laravel-questionnaire",
+    "keywords":
+    [
+        "leapfinder",
+        "questionnaire",
+        "survey",
+        "questions",
+        "answers",
+        "laravel"
+    ],
+    "authors": [
+        {
+          "name": "Tyson List",
+          "homepage": "https://leapfinder.com",
+          "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.1",
+        "illuminate/config": "~5.8.0",
+        "illuminate/database": "~5.8.0",
+        "illuminate/support": "~5.8.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "phpunit/phpunit": "^7.5|^8.0",
+        "orchestra/testbench": "~3.8.0",
+        "scrutinizer/ocular": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeapFinder\\Questionnaire\\": "src"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LeapFinder\\Questionnaire\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LeapFinder\\Questionnaire\\QuestionnaireServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
