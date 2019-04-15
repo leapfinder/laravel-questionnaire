@@ -21,8 +21,11 @@ The models supplied by this package can be used the same as any other model in a
 Samples:
 
 ```php
-// Get all questions that the currently authenticated user has not answered
-Question::answered(false)->get();
+use LeapFinder\Questionnaire\Models\Question;
+use LeapFinder\Questionnaire\Models\Answer;
+
+// Get all questions
+Question::get();
 
 // Get answers for a specific user
 Answer::where('user_id', $id)->get();
