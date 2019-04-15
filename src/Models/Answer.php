@@ -10,9 +10,15 @@ use LeapFinder\Questionnaire\Contracts\Answer as AnswerContract;
 class Answer extends Model implements AnswerContract
 {
     use SoftDeletes;
-    
+
     protected $dates = [
         'created_at', 'updated_at', 'deleted_at',
+    ];
+
+    protected $fillable = [
+      'text',
+      'user_id',
+      'question_id'
     ];
 
     public function user(): BelongsTo
